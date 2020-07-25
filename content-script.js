@@ -1,7 +1,7 @@
 /*
 copy the selected text to clipboard
 */
-function displaySelection() {
+function copySelection() {
     var selectedText = window.getSelection().toString().trim();
 
     if (selectedText) {
@@ -12,4 +12,4 @@ function displaySelection() {
 /*
 Add copySelection() as a listener to mouseup events.
 */
-document.addEventListener("mouseup", displaySelection);
+document.addEventListener("mouseup", copySelection);

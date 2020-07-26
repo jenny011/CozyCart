@@ -1,7 +1,9 @@
 # HobbyHacks project Ingredient-Purchase-Links-Extension
 
 Structure:
-1. text selection -> 2. search for Amazon/.. links -> 3. clickable pop up
+1. text selection (content.js) 
+-> 2. search for Amazon/.. links (content.js) 
+-> 3. clickable pop up display links (popup/popup.js)
 
 Task break up:
 1. text selection

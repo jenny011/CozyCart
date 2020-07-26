@@ -6,5 +6,5 @@ Have you ever felt exhausted comparing prices on online grocery stores? Have you
 ### Description
 When you prepare for cooking and viewing a recipe online, you can simply select one ingredient and click the CozyCart icon, which will direct you to a new tab presenting the most relevant items from Amazon Fresh and other sources sorted by availability, price, and rating. 
 
-### Future developments
-So far, we have only implemented a prototype. The next step will be to incorporate searching and sorting. If possible, our future development would be making this tab view into a floating window that can allow you to stay on the same page while looking for different items.
+### Future improvements
+So far, we have only implemented a prototype. The next step will be to incorporate searching and sorting. If possible, our future development would include making this tab view into a floating window that can allow you to stay on the same page while looking for different items.

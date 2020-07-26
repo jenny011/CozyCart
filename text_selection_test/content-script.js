@@ -17,6 +17,10 @@
 /**
 * Gets the HTML of the user's selection
 */
+
+/*
+new tab
+*/
 chrome.browserAction.onClicked.addListener(function() {
     chrome.tabs.executeScript({
         code: "window.getSelection().toString(); "
@@ -26,3 +30,15 @@ chrome.browserAction.onClicked.addListener(function() {
         });
     });
 });
+// /*
+//	popup window
+//	*/
+// chrome.browserAction.onClicked.addListener(function() {
+//     chrome.tabs.executeScript({
+//         code: "window.getSelection().toString(); "
+//     }, function(selection) {
+//         chrome.windows.create({
+//             url: "https://www.amazon.com/s?k=" + selection[0] + "&i=amazonfresh", type: "popup"
+//         }, function(window){});
+//     });
+// });

@@ -1,5 +1,6 @@
 var keyword;
 
+//Actions when icon is clicked
 chrome.browserAction.onClicked.addListener(function() {
     chrome.tabs.executeScript({
         code: "window.getSelection().toString(); "
@@ -12,6 +13,7 @@ chrome.browserAction.onClicked.addListener(function() {
     });
 });
 
+//respond to products.js request for links
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	if (request.poke == "get product links") {
 		sendResponse({product: keyword, links: [

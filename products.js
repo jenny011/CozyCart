@@ -6,6 +6,7 @@ function addProduct(response) {
 	}
 	if (response.links) {
 		for (let i=0; i < response.links.length; i++) {
+			//Add a div for one link
 			var subdiv = document.createElement('div');
 			var a = document.createElement('a');
 			var linkName = document.createTextNode(response.links[i].name);
@@ -35,6 +36,7 @@ function addProduct(response) {
 			subdiv.style.borderRadius = "20px";
 			subdiv.style.flexBasis = "30%";
 			subdiv.style.textAlign="center";
+			//Append the subdiv to the flex container
 			var div = document.getElementById("productLinks");
 			div.appendChild(subdiv);
 		}
@@ -50,5 +52,6 @@ function addProduct(response) {
 
 window.addEventListener('load', async function () {
 	//chrome.tabs.getCurrent(function(result) {console.log(result.id);});
+	//ask content.js to get the links
 	chrome.runtime.sendMessage({poke: "get product links"}, addProduct);
 });

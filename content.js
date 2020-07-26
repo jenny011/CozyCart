@@ -1,11 +1,4 @@
-// var amazon = require('amazon-product-api');
-// var client = amazon.createClient({
-//   awsId: "aws ID",
-//   awsSecret: "aws Secret",
-//   awsTag: "aws Tag"
-// });
 var keyword;
-// var links;
 
 chrome.browserAction.onClicked.addListener(function() {
     chrome.tabs.executeScript({

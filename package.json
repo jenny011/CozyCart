@@ -1,0 +1,23 @@
+{
+  "name": "recipe-extension",
+  "version": "1.0.0",
+  "description": "Structure: 1. text selection (content.js)  -> 2. search for Amazon/.. links (content.js)  -> 3. clickable pop up display links (popup/popup.js)",
+  "main": "content.js",
+  "dependencies": {
+    "amazon-product-api": "^0.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenny011/Recipe-Extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenny011/Recipe-Extension/issues"
+  },
+  "homepage": "https://github.com/jenny011/Recipe-Extension#readme"
+}

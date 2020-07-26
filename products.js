@@ -15,7 +15,7 @@ function addProduct(response) {
 			var price = document.createTextNode("price: " + response.links[i].price);
 			p1.appendChild(price)
 			var p2 = document.createElement('p');
-			var rating = document.createTextNode("rating:" + response.links[i].rating);
+			var rating = document.createTextNode("rating: " + response.links[i].rating);
 			p2.appendChild(rating)
 			var p3 = document.createElement('p');
 			var organic;

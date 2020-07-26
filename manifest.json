@@ -8,15 +8,16 @@
         "activeTab"
     ],
     "icons": {
-        "48": "icons/logo_48.png"
+        "48": "icons/logo_48.png",
+        "128": "icons/logo_128.png"
     },
     "background": {
-        "scripts": ["require.js","content.js"],
+        "scripts": ["content.js"],
         "persistent": false
     },
     "browser_action": {},
     "content_scripts": [{
         "matches": ["<all_urls>"],
-        "js": ["require.js","content.js"]
+        "js": ["content.js"]
     }]
 }

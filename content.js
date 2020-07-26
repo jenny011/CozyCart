@@ -1,9 +1,20 @@
-function getSelection() {
-    var selectedText = document.getSelection().toString().trim();
+chrome.browserAction.onClicked.addListener(function() {
+    chrome.tabs.executeScript({
+        code: "window.getSelection().toString(); "
+    }, function(selection) {
+        chrome.tabs.create({
+            //url: "https://www.amazon.com/s?k=" + selection[0] + "&i=amazonfresh" 
+            url: "./products.html"
+        });
+    });
+});
 
-    if (selectedText) {
-    	chrome.runtime.sendMessage({msg: selectedText});
-    }
-}
+// function getSelection() {
+//     var selectedText = document.getSelection().toString().trim();
 
-document.addEventListener("mouseup", getSelection);
+//     if (selectedText) {
+//     	chrome.runtime.sendMessage({msg: selectedText});
+//     }
+// }
+
+// document.addEventListener("mouseup", getSelection);

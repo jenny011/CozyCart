@@ -1,21 +1,9 @@
-function copySelection() {
-    var selectedText = window.getSelection().toString().trim();
+function getSelection() {
+    var selectedText = document.getSelection().toString().trim();
 
     if (selectedText) {
-    	chrome.runtime.sendMessage({keyword: selectedText}, function(response) {
-			console.log(response);
-		});
-    } else {
-    	console.log("No text selected");
+    	chrome.runtime.sendMessage({msg: selectedText});
     }
 }
 
-// chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
-//     if (request.method == "getSelection")
-//       sendResponse({data: window.getSelection().toString()});
-//     else
-//       sendResponse({}); // snub them.
-// });
-
-//document.addEventListener("mouseup", copySelection);
-document.addEventListener('selectionchange', copySelection);
+document.addEventListener("mouseup", getSelection);

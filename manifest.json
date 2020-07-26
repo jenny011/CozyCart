@@ -19,5 +19,6 @@
     "content_scripts": [{
         "matches": ["https://*/*"],
         "js": ["content.js"]
-    }]
+    }],
+    "web_accessible_resources": ["images/bg.png"]
 }

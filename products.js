@@ -32,7 +32,7 @@ function addProduct(response) {
 			subdiv.appendChild(p3);
 			subdiv.style.margin = "20pt";
 			subdiv.style.padding = "30pt";
-			subdiv.style.backgroundColor = "rgba(255,230,232,0.4)";
+			subdiv.style.backgroundColor = "rgba(255,240,244,0.5)";
 			subdiv.style.borderRadius = "20px";
 			subdiv.style.flexBasis = "30%";
 			subdiv.style.textAlign="center";
